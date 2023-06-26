@@ -23,11 +23,11 @@
 
 
 
-  <header class="container header-portfolio">
+  <header class="container header">
     <a href="/index.html" class="link logo">web <span class="logo-span">studio</span></a>
     <ul class="list nav ">
-      <li class="nav-item"><a href="/index.html" class="link nav-link">Studio</a></li>
-      <li class="nav-item"><a href="/portfolio.html" class="link nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="./index.html" class="link nav-link">Studio</a></li>
+      <li class="nav-item"><a href="./portfolio.html" class="link nav-link">Portfolio</a></li>
       <li class="nav-item"><a href="" class="link nav-link">Contacts</a></li>
     </ul>
     <address class="address">
@@ -52,9 +52,9 @@
       <div class="container  ">
         <h1 class="caption">
           Effective Solutions for Your Business</h1>
-        <div class="button-wrapp">
-          <button type="button" class="btn-banner">Order Service</button>
-        </div>
+        <!-- <div class="button-wrapp"> -->
+        <button type="button" class="btn-banner">Order Service</button>
+        <!-- </div> -->
 
       </div>
     </section>
@@ -64,7 +64,7 @@
     <!-- section our goal  -->
     <section class="section">
       <div class="container">
-        <h2 hidden class="headline">our goal</h2> <!-- этого тэга нет в макете -->
+        <h2 hidden class="headline-goal">our goal</h2> <!-- этого тэга нет в макете -->
         <ul class="list items-our-goal">
           <li class="items-goal">
             <h3 class="title">Strategy</h3>
@@ -80,6 +80,7 @@
             </p>
           </li>
           <li class="items-goal">
+
             <h3 class="title">Diligence</h3>
             <p class="subtitle">Research and confirm brands that present the strongest digital growth
               opportunities and minimize
@@ -127,23 +128,35 @@
         <ul class="list items-employee ">
           <li class="item-employee">
             <img class="img-clean" src="./images/main-page/employee-1.jpg" alt="employee" width="264" height="260">
-            <h3 class="title">Mark Guerrero</h3>
-            <p class="subtitle">Product Designer</p>
+            <div class="wrap-title">
+              <h3 class="title">Mark Guerrero</h3>
+              <p class="subtitle">Product Designer</p>
+            </div>
+
           </li>
           <li class="item-employee">
             <img class="img-clean" src="./images/main-page/employee-2.jpg" alt="employee" width="264" height="260">
-            <h3 class="title">Tom Ford</h3>
-            <p class="subtitle">Frontend Developer</p>
+            <div class="wrap-title">
+              <h3 class="title ">Tom Ford</h3>
+              <p class="subtitle">Frontend Developer</p>
+            </div>
+
           </li>
           <li class="item-employee">
             <img class="img-clean" src="./images/main-page/employee-3.jpg" alt="employee" width="264" height="260">
-            <h3 class="title">Camila Garcia</h3>
-            <p class="subtitle">Marketing</p>
+            <div class="wrap-title">
+              <h3 class="title">Camila Garcia</h3>
+              <p class="subtitle">Marketing</p>
+            </div>
+
           </li>
           <li class="item-employee">
             <img class="img-clean" src="./images/main-page/employee-4.jpg" alt="employee" width="264" height="260">
-            <h3 class="title">Daniel Wilson</h3>
-            <p class="subtitle">UI Designer</p>
+            <div class="wrap-title">
+              <h3 class="title">Daniel Wilson</h3>
+              <p class="subtitle">UI Designer</p>
+            </div>
+
           </li>
 
 
@@ -154,8 +167,9 @@
 
   <!-- footer -->
   <footer class="footer">
-    <div class="container">
-      <a href="./index.html" class="logo link">Web<span class="logo-span-footer">Studio</span></a>
+    <div class="container footer-content">
+
+      <a href="./index.html" class="logo-footer link">web <span class="logo-span-footer">Studio</span> </a>
       <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
         growth solutions.</p>
     </div>
