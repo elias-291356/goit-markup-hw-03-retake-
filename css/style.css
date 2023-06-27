@@ -422,6 +422,20 @@
 
     /* portfolio  header  */
 
+    .portfolio-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .portfolio-menu {
+        display: flex;
+        margin-right: 40px;
+    }
+
+    .portfolio-menu:last-child {
+        margin-right: 0px;
+    }
+
     .portfolio-buttons {
 
         padding-bottom: 72px;
