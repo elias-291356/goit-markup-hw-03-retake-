@@ -58,8 +58,8 @@
         width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto;
+        display: flex;
 
     }
 
@@ -84,12 +84,18 @@
 
 
     /* main page -  header  */
+    .nav-list {
+        display: flex;
+        align-items: center;
+    }
+
     .nav, .address {
         display: flex;
     }
 
     .header {
         display: flex;
+        border-bottom: 1px solid #e7e9fc;
     }
 
 
@@ -98,6 +104,7 @@
         align-items: center;
         margin-left: 72px;
 
+        display: flex;
         color: var(--primary-color);
         font-size: 16px;
         font-weight: 500;
@@ -105,15 +112,14 @@
         letter-spacing: 0.32px;
     }
 
-    .nav .nav-item+.nav-item {
-        margin-left: 40px;
-
+    .nav-item:not(:last-child) {
+        margin-right: 40px;
     }
 
     .address {
+        display: flex;
         align-items: center;
         margin-left: auto;
-
         color: var(--text-color);
         font-weight: 400;
 
@@ -121,8 +127,8 @@
 
 
 
-    .address .address-item+.address-item {
-        margin-left: 32px;
+    .address:not(:last-child) {
+        margin-right: 40px;
     }
 
     .logo {
@@ -130,7 +136,7 @@
         align-items: center;
         padding-top: 24px;
         padding-bottom: 24px;
-
+        margin-right: 76px;
         color: var(--accent-color);
         font-size: 18px;
         font-family: Raleway, sans-serif;
@@ -183,14 +189,14 @@
     .section {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 120px;
-        margin-bottom: 120px;
+        padding-top: 120px;
+        padding-bottom: 120px;
 
     }
 
     .caption {
 
-        width: 500px;
+        max-width: 496px;
 
         margin: 0 auto;
         font-size: 56px;
@@ -200,6 +206,7 @@
     }
 
     .btn-banner {
+        display: block;
         background-color: var(--accent-color);
         font-family: "Roboto", sans-serif;
         font-weight: 500;
@@ -238,6 +245,7 @@
         text-transform: capitalize;
         color: var(--primary-color);
         padding-bottom: 72px;
+        margin-bottom: 8px;
     }
 
     .headline {
@@ -255,6 +263,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
     }
 
 
