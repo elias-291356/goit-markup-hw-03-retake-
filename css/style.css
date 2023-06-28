@@ -451,6 +451,10 @@
     }
 
     /* portfilio main  */
+
+
+
+
     .section-portfolio {
         padding-top: 96px;
         padding-bottom: 120px;
@@ -487,10 +491,26 @@
         border: 1px solid transparent;
     }
 
-    .cards-collection {
+    .portfolio-cards {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .portfolio-item {
+        width: calc((100% - 48px) / 3);
+        margin-right: 24px;
+        margin-bottom: 49px;
+    }
+
+    .portfolio-item:nth-last-child(3n + 1) {
+        margin-right: 0px;
+
+    }
+
+    .portfolio-item:nth-last-child(-n + 3) {
+        margin-bottom: 0px;
+    }
+
 
     .portfolio-wrap-title {
         padding-top: 32px;
