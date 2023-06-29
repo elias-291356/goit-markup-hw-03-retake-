@@ -85,11 +85,8 @@
     /* скрытие заголовка  */
 
     .visually-hidden {
-        position: absolute;
-        clip: rect(0 0 0 0);
-        width: 1px;
-        height: 1px;
-        margin: 1px;
+        position: fixed;
+        transform: scale(0);
     }
 
 
@@ -221,12 +218,10 @@
 
     }
 
-    .descr {
-        display: flex;
-        flex-wrap: wrap;
-
-        padding-bottom: 120px;
+    .section:last-child {
+        padding-top: 0px;
     }
+
 
 
     .caption {
