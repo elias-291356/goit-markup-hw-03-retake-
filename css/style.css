@@ -199,6 +199,7 @@
         text-align: center;
         background-color: var(--primary-color);
         border-top: 1px solid #E7E9FC;
+
     }
 
     .section {
@@ -254,10 +255,11 @@
     /* -main-page our-goal */
 
     .headline-goal {
+
         visibility: hidden;
         font-size: 36px;
         line-height: 1.11;
-        text-align: center;
+
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--primary-color);
@@ -357,7 +359,7 @@
 
         font-size: 36px;
         line-height: 1.11;
-        text-align: center;
+
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--primary-color);
@@ -437,6 +439,16 @@
 
     /* portfolio  header  */
 
+    .content-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .block-a {
+        display: block;
+    }
+
     .portfolio-nav {
         display: flex;
         align-items: center;
@@ -489,7 +501,9 @@
 
     .portfolio-button:hover,
     .portfolio-button:focus {
+        background-color: var(--hover-color);
         border: 1px solid transparent;
+        cursor: pointer;
     }
 
     .portfolio-cards {
@@ -527,7 +541,10 @@
         margin-bottom: 8px;
     }
 
-
+    /* portfolio footer  */
+    .footer-content {
+        display: block;
+    }
 
 
 
