@@ -85,10 +85,18 @@
     /* скрытие заголовка  */
 
     .visually-hidden {
-        position: fixed;
-        transform: scale(0);
-    }
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
 
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 
     /* main page -  header  */
     .nav-list {
@@ -218,9 +226,7 @@
 
     }
 
-    .section:last-child {
-        padding-top: 0px;
-    }
+
 
 
 
@@ -271,7 +277,7 @@
 
     .headline-goal {
 
-        visibility: hidden;
+
         font-size: 36px;
         line-height: 1.11;
 
@@ -365,7 +371,7 @@
         background-color: var(--secondary-color);
         display: flex;
         align-items: center;
-
+        padding-top: 120px;
 
         padding-bottom: 120px;
     }
